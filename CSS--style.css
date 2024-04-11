@@ -1,0 +1,222 @@
+body {
+  font-family: "PT Sans", sans-serif;
+  display: flex;
+  flex-direction: column;
+  height: 1700px;
+  margin: 0;
+  background-image: url("image/wald\ bild.jpg");
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center center;
+  backdrop-filter: brightness(0.85);
+}
+
+.titel {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  top: 20vh;
+  color: white;
+  font-size: 50px;
+  text-shadow: 5px 5px 5px rgba(0, 0, 0, 0.8);
+}
+
+.container {
+  position: absolute;
+  right: 20px;
+  top: 16px;
+  font-size: 20px;
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+  margin-left: 16px;
+}
+.globale-navigation {
+  color: rgb(0, 0, 0);
+  text-decoration: none;
+  margin-left: 16px;
+  background-color: rgb(194, 194, 194);
+  border-radius: 4px;
+  padding: 2px;
+}
+.globale-navigation:hover {
+  border-radius: 8px;
+  background-color: rgb(84, 189, 101);
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.8);
+  color: white;
+}
+.logo {
+  height: 150px;
+  width: 150px;
+  position: absolute;
+  top: 16px;
+  left: 20px;
+}
+.home-text {
+  width: 70%;
+  top: 900px;
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: rgb(197, 195, 195);
+  border-radius: 10px;
+  font-size: 16px;
+  padding: 10px;
+}
+
+h3 {
+  font-size: 25px;
+  text-align: center;
+  text-decoration: underline;
+}
+h4 {
+  font-size: 25px;
+  text-align: center;
+  text-decoration: underline;
+}
+h5 {
+  font-size: 13px;
+}
+
+footer {
+  position: absolute;
+  background-color: #6d4f33;
+  width: 100%;
+  height: 135px;
+  bottom: 0;
+  box-sizing: border-box;
+}
+.footer-nav {
+  margin: 30px;
+}
+.footer-nav ul {
+  display: flex;
+  justify-content: center;
+  list-style-type: none;
+}
+.footer-nav ul li a {
+  color: rgb(255, 255, 255);
+  margin: 30px;
+  text-decoration: none;
+  font-size: 20px;
+}
+.bottom-footer {
+  background-color: rgb#526952;
+  color: rgb(224, 224, 224);
+  text-align: center;
+  font-size: 12px;
+}
+
+/*.replacement-footer{
+ background-color: aliceblue;
+ left: 0;
+ bottom: 0;
+margin-top: auto;
+position: fixed;
+display: flex;
+justify-content: center;
+}
+
+.copy-footer{
+    background-color: aquamarine;
+}*/
+.Unternehmen {
+  padding: 2px;
+  text-align: center;
+}
+#TabelleUnternehmen tbody td {
+  text-align: center;
+}
+#TabelleUnternehmen {
+  border-collapse: collapse;
+  border: 3px solid black; /* Ändere die Farbe und Dicke nach Bedarf */
+  margin: 0 auto;
+  background-color: rgb(248, 193, 193);
+  border-radius: 8px;
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.6);
+  color: rgb(0, 0, 0);
+}
+#TabelleUnternehmen th,
+#TabelleUnternehmen td {
+  border: 1px solid rgb(125, 125, 125); /* Ändere die Farbe und Dicke nach Bedarf */
+  padding: 7px; /* Füge hier den gewünschten Abstand zwischen Zellen und Umrandung hinzu */
+  font-size: 17px;
+}
+#inputUnternehmen {
+  display: block; /* Stellt das Eingabefeld als Blockelement dar */
+  margin: 15px auto;
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.3);
+}
+th[data-col="Unternehmen"]:hover {
+  text-decoration-line: underline;
+  background-color: rgb(246, 164, 164);
+}
+th[data-col="Anteil"]:hover {
+  text-decoration-line: underline;
+  background-color: rgb(246, 164, 164);
+}
+#TabelleUnternehmen th {
+  border-bottom: 2px solid black;
+  border-left: 1.5px solid black;
+}
+body.datenschutz-page {
+  height: 2070px;
+}
+@media (max-width: 720px) {
+  .home-text {
+    flex-direction: column;
+    top: 950px;
+    font-size: 12px;
+  }
+}
+@media (max-width: 500px) {
+  .globale-navigation {
+    display: block;
+
+    margin-bottom: 5px;
+  }
+}
+
+@media (max-width: 500px) {
+  .home-text {
+    flex-direction: column;
+    top: 1050px;
+    font-size: 11px;
+  }
+}
+@media (max-width: 400px) {
+  .home-text {
+    top: 1150px;
+    font-size: 10px;
+  }
+  .titel {
+    font-size: 40px;
+  }
+  .logo {
+    height: 100px;
+    width: 100px;
+  }
+  .globale-navigation {
+    font-size: 15px;
+  }
+}
+@media (max-width: 573px) {
+  .footer-nav {
+    margin-bottom: 5px;
+  }
+}
+@media (max-width: 573px) {
+  .footer-nav ul {
+    align-items: center;
+    flex-direction: column;
+    margin-bottom: -5px;
+    
+  }
+}
+
+@media (max-width: 2200px) {
+  body.datenschutz-page .home-text {
+    top: 1150px; /* 900px (ursprüngliche Position) + 300px */
+  }
+}

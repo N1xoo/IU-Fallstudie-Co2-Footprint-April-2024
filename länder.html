@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Länder</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="CSS--style.css" />
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <main>
+      <img class="logo" src="image/logo co2.png" />
+      <nav>
+        <div class="container">
+          <a class="globale-navigation" href="index.html">Home </a>
+          <!-- <a class="globale-navigation" href="">Was ist ein CO2 Fußabdruck? </a>-->
+          <a class="globale-navigation" href="unternehmen.html">Unternehmen </a>
+          <a class="globale-navigation" href="länder.html">Länder </a>
+        </div>
+      </nav>
+      <h1 class="titel">
+        Willkommen auf <br />
+        CO²-Fußabdruck.de
+      </h1>
+      <div class="home-text" class="Unternehmen">
+        <h2>Übersicht Unternehmen</h2>
+        <p>
+          Die Übersicht zeigt die 12 Länder mit dem größten CO² ausstoß auf der
+          ganzen Welt an.
+          <br /><br />
+          Wie man direkt erkennt ist China das Land das mit abstand am meisten
+          CO² 2022 produziert hat. Wenn man weiter guckt sieht man das 12 Länder
+          rund 70% des Weltweiten CO² ausstoßes verursachen.
+          <br /><br />
+          Quelle: Statista 2024
+        </p>
+        <input
+          type="text"
+          id="inputUnternehmen"
+          onkeyup="UnternehmenFilter()"
+          placeholder="Suche nach Unternehmen"
+          title="Unternehmen eingeben"
+        />
+        <table id="TabelleUnternehmen">
+          <thead>
+            <tr>
+              <th data-col="Unternehmen">
+                Länder <span class="sort-arrow"></span>
+              </th>
+              <th data-col="Anteil">
+               Anteil des CO²-Ausstoss in %
+                <span class="sort-arrow"></span>
+              </th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><div class="Unternehmen">China</div></td>
+              <td>30,68</td>
+            </tr>
+            <tr>
+              <td><div class="Unternehmen">USA</div></td>
+              <td>13.61</td>
+            </tr>
+            <tr>
+              <td><div class="Unternehmen">Indien</div></td>
+              <td>7.62</td>
+            </tr>
+            <tr>
+              <td><div class="Unternehmen">Russland</div></td>
+              <td>4.45</td>
+            </tr>
+            <tr>
+              <td><div class="Unternehmen">Japan</div></td>
+              <td>2.84</td>
+            </tr>
+            <tr>
+              <td><div class="Unternehmen">Indonesien</div></td>
+              <td>1.96</td>
+            </tr>
+            <tr>
+              <td><div class="Unternehmen">Iran</div></td>
+              <td>1.86</td>
+            </tr>
+            <tr>
+              <td><div class="Unternehmen">Deutschland</div></td>
+              <td>1.79</td>
+            </tr>
+            <tr>
+              <td><div class="Unternehmen">Saudi Arabien</div></td>
+              <td>1.78</td>
+            </tr>
+            <tr>
+              <td><div class="Unternehmen">Südkorea</div></td>
+              <td>1.62</td>
+            </tr>
+            <tr>
+              <td><div class="Unternehmen">Kanada</div></td>
+              <td>1.47</td>
+            </tr>
+            <tr>
+              <td><div class="Unternehmen">Mexico</div></td>
+              <td>1.38</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </main>
+    <!--<div class="replacement-footer">
+      <a href="">Impressum</a>
+      <a href="">Datenschutz</a>
+      <a href="">Über uns</a>
+      <p class="copy-footer">Copyright: &copy;2024Nico Appel - Alle Rechte vorbehalten</p>
+    </div>-->
+    <footer>
+      <div class="footer-nav">
+        <ul>
+          <li><a href="impressum.html">Impressum</a></li>
+          <li><a href="datenschutz.html">Datenschutz</a></li>
+          <li><a href="über-uns.html">Über uns</a></li>
+        </ul>
+      </div>
+      <div class="bottom-footer">
+        <p>Copyright &copy;2024; Designed by Nico Appel</p>
+      </div>
+    </footer>
+  </body>
+</html>
